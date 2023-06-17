@@ -1,0 +1,76 @@
+<%# EJS Vars:
+ - locals.ratings.development_technique = rating
+ - locals.ratings.delivery_pace = rating
+ - locals.ratings.code_quality = rating
+ - locals.ratings.testing_strategies = rating
+ - locals.ratings.key_technologies = rating
+
+ where type "rating" = string, one of ["UNKNOWN", "LOW", "MEDIUM", "HIGH"]
+%>
+<div class="ratings-table">
+    <h5 class="ratings-table__title">Predictive insight ratings:</h5>
+
+    <% if (locals.ratings) { %>
+        <% Object.keys(locals.ratings).forEach(function(key){ %>
+
+            <div class="ratings-table__row">
+                <h6 class="title">
+                    <!-- Label -->
+                    <span class="label">
+
+                        <% if(key == 'development_technique'){ %>
+                            Development technique
+                        <% } else if(key == 'delivery_pace'){ %>
+                            Delivery pace
+                        <% } else if(key == 'code_quality'){ %>
+                            Code quality
+                        <% } else if(key == 'testing_strategies'){ %>
+                            Testing strategy
+                        <% }  else if(key == 'key_technologies'){ %>
+                            Key technologies
+                        <% } else{ %>
+                            Error
+                        <% } %>
+
+                    </span>
+
+                    <!-- Icon -->
+                    <span class="icon  <% if(locals.ratings[key] == 'HIGH'){ %>  <%= 'active' %>  <% } %>  ">
+                        <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0px" y="0px"
+                             viewBox="0 0 100 100" xml:space="preserve">
+                            <path class="st0"
+                                  d="M49.5,89.5c-22.1,0-40-17.9-40-40c0-22.1,17.9-40,40-40c22.1,0,40,17.9,40,40C89.5,71.6,71.6,89.5,49.5,89.5z   M67.6,36.4c-1.2-1.2-3.1-1.2-4.3,0L44.2,56l-8.5-8.8c-1.2-1.2-3.1-1.2-4.3,0c-1.2,1.2-1.2,3.2,0,4.4l10.7,11c1.2,1.2,3.1,1.2,4.3,0  l21.3-21.8C68.8,39.6,68.8,37.6,67.6,36.4z"></path>
+                        </svg>
+                    </span>
+                </h6>
+
+                <!-- Status -->
+                <div class="status">
+                    <%= locals.ratings[key] %>
+                </div>
+
+                <!-- Rating -->
+                <div class="rating">
+                    <% if(locals.ratings[key] == 'UNKNOWN' ){ %>
+                        <span class="red"></span>
+                    <% } else if(locals.ratings[key] == 'LOW' ){ %>
+                        <span class="orange"></span>
+                        <span class="orange"></span>
+                    <% }  else if(locals.ratings[key] == 'MEDIUM' ){ %>
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                        <span class="blue"></span>
+                    <% }  else if(locals.ratings[key] == 'HIGH' ){ %>
+                        <span class="green"></span>
+                        <span class="green"></span>
+                        <span class="green"></span>
+                        <span class="green"></span>
+                    <% } %>
+                </div>
+
+            </div>
+
+        <% }); %>
+    <% } %>
+
+</div>

@@ -1,0 +1,139 @@
+<section class="section-pricing-cards">
+    <div class="container">
+        <div class="row justify-center">
+            <div class="col-lg-4 m-4 pricing-card">
+                <!-- Background -->
+                <img src="assets/img/site/bg_tile.jpg" alt="" class="background">
+
+                <!-- Overlay -->
+                <div class="overlay red"></div>
+
+                <!-- Inner Content -->
+                <div class="container pricing-content">
+                    <div class="spacer"></div>
+                    <%- include('../../components/content/price_card_with_currency.ejs', {
+                    package_name: "Try Free",
+                    currency_code: "GBP",
+                    price_row1: "no account needed",
+                    price_row2: "no credit-card",
+                    footnote: "3 candidate links",
+                    num_links: 10,
+                    href: "/try-free.html",
+                    cta: "Try Free",
+                    is_visible: false
+                    }) %>
+                    <%- include('../../components/content/price_card_with_currency.ejs', {
+                    package_name: "Try Free",
+                    currency_code: "EUR",
+                    price_row1: "no account needed",
+                    price_row2: "no credit-card",
+                    footnote: "3 candidate links",
+                    href: "/try-free.html",
+                    cta: "Try Free",
+                    is_visible: false
+                    }) %>
+                    <%- include('../../components/content/price_card_with_currency.ejs', {
+                    package_name: "Try Free",
+                    currency_code: "USD",
+                    price_row1: "no account needed",
+                    price_row2: "no credit-card",
+                    footnote: "3 candidate links",
+                    href: "/try-free.html",
+                    cta: "Try Free",
+                    is_visible: true
+                    }) %>
+                    <div class="spacer"></div>
+                </div>
+            </div>
+            <div class="col-lg-4 m-4 pricing-card">
+                <!-- Background -->
+                <img src="assets/img/site/bg_tile.jpg" alt="" class="background">
+
+                <!-- Overlay -->
+                <div class="overlay blue"></div>
+
+                <!-- Inner Content -->
+                <div class="container pricing-content">
+                    <div class="spacer"></div>
+                    <%- include('../../components/content/price_card_with_currency.ejs', {
+                    package_name: "Premium",
+                    currency_code: "GBP",
+                    price_row1: "£500 per month",
+                    price_row2: "(billed annually)",
+                    footnote: "max 100 candidate links per year",
+                    href: "https://buy.stripe.com/fZe168fnW5ebcMgaEJ",
+                    stripe_checkout_id: "00gaGI2BaayvaE8bIM",
+                    cta: "Buy now",
+                    is_visible: false
+                    }) %>
+                    <%- include('../../components/content/price_card_with_currency.ejs', {
+                    package_name: "Premium",
+                    currency_code: "EUR",
+                    price_row1: "€580 per month",
+                    price_row2: "(billed annually)",
+                    footnote: "max 100 candidate links per year",
+                    href: "https://buy.stripe.com/14kbKM4Ji8qneUodQW",
+                    cta: "Buy now",
+                    is_visible: false
+                    }) %>
+                    <%- include('../../components/content/price_card_with_currency.ejs', {
+                    package_name: "Premium",
+                    currency_code: "USD",
+                    price_row1: "$650 per month",
+                    price_row2: "(billed annually)",
+                    footnote: "max 100 candidate links per year",
+                    num_links: 100,
+                    href: "https://buy.stripe.com/00gaGI5NmayvcMgfZ5",
+                    cta: "Buy now",
+                    is_visible: true
+                    }) %>
+                    <div class="spacer"></div>
+                </div>
+            </div>
+            <div class="col-lg-4 m-4 pricing-card">
+                <!-- Background -->
+                <img src="assets/img/site/bg_tile.jpg" alt="" class="background">
+
+                <!-- Overlay -->
+                <div class="overlay dark"></div>
+
+                <!-- Inner Content -->
+                <div class="container pricing-content">
+                    <div class="spacer"></div>
+                    <%- include('../../components/content/price_card_with_currency.ejs', {
+                    package_name: "Platinum",
+                    currency_code: "GBP",
+                    price_row1: "£833 per month",
+                    price_row2: "(billed annually)",
+                    footnote: "max 200 candidate links per year",
+                    href: "https://buy.stripe.com/00gaGI2BaayvaE8bIM",
+                    cta: "Buy now",
+                    is_visible: false
+                    }) %>
+                    <%- include('../../components/content/price_card_with_currency.ejs', {
+                    package_name: "Platinum",
+                    currency_code: "EUR",
+                    price_row1: "€983 per month",
+                    price_row2: "(billed annually)",
+                    footnote: "max 200 candidate links per year",
+                    href: "https://buy.stripe.com/7sIbKMgs021Z13yaEH",
+                    cta: "Buy now",
+                    is_visible: false
+                    }) %>
+                    <%- include('../../components/content/price_card_with_currency.ejs', {
+                    package_name: "Platinum",
+                    currency_code: "USD",
+                    price_row1: "$1133 per month",
+                    price_row2: "(billed annually)",
+                    footnote: "max 200 candidate links per year",
+                    href: "https://buy.stripe.com/3csg121x6eOL6nS28a",
+                    cta: "Buy now",
+                    is_visible: true
+                    }) %>
+                    <div class="spacer"></div>
+                </div>
+            </div>
+            <%- include('../../components/content/price_card_selector_js.ejs') %>
+        </div>
+    </div>
+</section>

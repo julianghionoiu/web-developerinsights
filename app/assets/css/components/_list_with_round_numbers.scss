@@ -1,0 +1,36 @@
+.list-with-round-numbers {
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  .list-item {
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .icon {
+      display: flex;
+      align-items: center;
+      margin-right: 25px;
+      min-width: 40px;
+      width: 40px;
+      justify-content: center;
+
+      img {
+        object-fit: contain;
+        min-height: 30px;
+        display: block;
+      }
+    }
+
+    .label {
+      color: $color-grey;
+      font-family: $font-avenir;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+}

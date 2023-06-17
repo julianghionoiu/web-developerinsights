@@ -1,0 +1,104 @@
+
+
+.btn {
+  display: inline-block;
+  width: 220px;
+  color: $color-white;
+  font-family: $font-avenir;
+  font-size: 16px;
+  font-weight: 900;
+  text-align: center;
+  border-radius: 6px;
+  padding: 0 22px;
+  @include transition;
+
+  &.btn-dark {
+    box-sizing: border-box;
+    line-height: 42px;
+    width: auto;
+    border: 1px solid $color-white;
+    border-radius: 6px;
+    background-color: $color-text;
+    color: $color-white;
+    letter-spacing: 1px;
+  }
+
+  &.btn-dark-empty {
+    padding: 8px 22px;
+    box-sizing: border-box;
+    line-height: 24px;
+    width: auto;
+    border-radius: 6px;
+    letter-spacing: 1px;
+    background-color: transparent;
+    color: $color-text;
+    border: 2px solid $color-text;
+
+    &:hover, &:active, &:focus {
+      background-color: $color-text;
+      color: $color-white;
+    }
+
+  }
+
+  &.btn-white-empty {
+    box-sizing: border-box;
+    line-height: 42px;
+    width: auto;
+    border-radius: 6px;
+    letter-spacing: 1px;
+    background-color: transparent;
+    color: $color-white;
+    border: 2px solid $color-white;
+
+    &:hover, &:active, &:focus {
+      background-color: $color-white;
+      color: $color-text;
+    }
+  }
+
+
+  &.btn-red {
+    background-color: $color-red;
+    box-sizing: border-box;
+    line-height: 42px;
+    width: auto;
+    border: 2px solid $color-white;
+    border-radius: 6px;
+    color: $color-white;
+    letter-spacing: 1px;
+
+    &:hover, &:active, &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  &.btn-red-empty {
+    box-sizing: border-box;
+    line-height: 42px;
+    width: auto;
+    border-radius: 6px;
+    letter-spacing: 1px;
+    background-color: transparent;
+    color: $color-red;
+    border: 2px solid $color-red;
+
+    &:hover, &:active, &:focus {
+      background-color: $color-red;
+      color: $color-white;
+    }
+  }
+
+  &.large {
+    max-width: 100%;
+    min-width: 256px;
+  }
+
+  @media (max-width: 340px) {
+    font-size: 15px;
+    padding: 0 15px;
+  }
+}
+
+
+

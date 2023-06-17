@@ -1,0 +1,17 @@
+img {
+  max-width: 100%;
+  display: block;
+  border: 0;
+  outline: 0;
+  border: none;
+  height: auto;
+
+  &.shadow {
+    box-shadow: 0 2px 24px 0 rgba(0,0,0,.14);
+  }
+}
+
+
+hr {
+  margin: 0;
+}

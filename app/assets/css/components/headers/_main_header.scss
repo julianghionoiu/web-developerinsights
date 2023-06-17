@@ -1,0 +1,184 @@
+/* Header */
+.main-header {
+  height: 830px;
+  width: 100%;
+  background-image: url(../img/site/bg_main.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  @include site-spacing-margin-bottom;
+
+  // Header Content
+  .header-content {
+    width: 100%;
+    padding-top: 40px;
+
+    .header-title {
+      letter-spacing: 0.75px;
+    }
+  }
+
+  // Partners
+  .partners {
+    margin-top: 40px;
+
+    &__caption {
+      letter-spacing: 1px;
+    }
+
+    .partners__list {
+      margin-top: 25px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .partner {
+        display: flex;
+        align-items: center;
+        margin-right: 25px;
+        height: 50px;
+
+        img {
+          display: block;
+          object-fit: contain;
+          height: 100%;
+        }
+
+        // masabi
+        &:nth-child(1) {
+          img {
+            max-height: 44.5px;
+          }
+        }
+
+        // valtech
+        &:nth-child(2) {
+          img {
+            max-height: 26px;
+          }
+        }
+
+        // ofgem
+        &:nth-child(3) {
+          img {
+            max-height: 40px;
+          }
+        }
+
+        // think-money
+        &:nth-child(4) {
+          img {
+            max-height: 35px;
+          }
+        }
+
+        // iwoca
+        &:nth-child(5) {
+          img {
+            max-height: 46px;
+          }
+        }
+
+
+      }
+
+
+    }
+
+  }
+
+  @media (max-width: 1199px) {
+    display: flex;
+    align-items: center;
+    .header-content {
+      padding: 0;
+      padding-bottom: 50px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 75px;
+    .header-content {
+      padding: 0;
+
+      .col-right {
+        justify-content: flex-start;
+        padding-top: 10px;
+
+        .console-wrap {
+          max-width: 420px;
+        }
+      }
+    }
+    .partners .partners__list {
+      .partner {
+        margin-bottom: 15px;
+        height: 35px;
+
+        // masabi
+        &:nth-child(1) {
+          img {
+            max-height: 32.5px;
+          }
+        }
+
+        // valtech
+        &:nth-child(2) {
+          img {
+            max-height: 14px;
+          }
+        }
+
+        // ofgem
+        &:nth-child(3) {
+          img {
+            max-height: 28px;
+          }
+        }
+
+        // think-money
+        &:nth-child(4) {
+          img {
+            max-height: 23px;
+          }
+        }
+
+        // iwoca
+        &:nth-child(5) {
+          img {
+            max-height: 34px;
+          }
+        }
+
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    background-image: url(../img/site/bg_main_mobile.png);
+    background-size: cover;
+    background-position: bottom center;
+    padding-top: 35px;
+
+    .partners__caption {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .partners .partners__list {
+      flex-direction: column;
+
+      .partner {
+        margin: 12px auto !important;
+      }
+    }
+
+
+  }
+
+  @media (max-width: 340px) {
+    margin-top: 65px;
+  }
+
+}

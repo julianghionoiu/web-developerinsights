@@ -1,0 +1,65 @@
+
+.report-image-with-overlay {
+  max-width: calc(100% - 165px);
+  margin: 30px auto 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  img {
+    box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.14);
+    display: block;
+    object-fit: contain;
+  }
+
+  .report-overlay-text {
+    padding: 23px;
+    width: 360px;
+    background-color: $color-white;
+    position: absolute;
+    margin: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-80px) translateY(64px);
+    box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.14);
+
+    .section-heading {
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    h4 {
+      margin: 0;
+    }
+
+    .section-sub-content {
+      ul {
+        list-style-type: disc;
+        padding-top: 10px;
+        padding-left: 0.5em;
+        list-style-position: inside;
+
+        li {
+          line-height: 1.5;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    max-width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    .report-overlay-text {
+      position: static;
+      transform: none;
+      width: 100%;
+
+      h4 {
+        margin: 0;
+      }
+    }
+  }
+}

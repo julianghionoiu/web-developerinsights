@@ -1,0 +1,65 @@
+<svg width="22px" height="36px" viewBox="0 0 22 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>scala</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0.17%" y1="49.65%" x2="99.82%" y2="49.65%" id="linearGradient-1">
+            <stop stop-color="#656565" offset="0%"></stop>
+            <stop stop-color="#010101" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0.17%" y1="49.65%" x2="99.82%" y2="49.65%" id="linearGradient-2">
+            <stop stop-color="#656565" offset="0%"></stop>
+            <stop stop-color="#010101" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0.17%" y1="49.65%" x2="99.82%" y2="49.65%" id="linearGradient-3">
+            <stop stop-color="#656565" offset="0%"></stop>
+            <stop stop-color="#010101" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0.17%" y1="50.05%" x2="99.82%" y2="50.05%" id="linearGradient-4">
+            <stop stop-color="#9F1C20" offset="0%"></stop>
+            <stop stop-color="#ED2224" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0.17%" y1="50.05%" x2="99.82%" y2="50.05%" id="linearGradient-5">
+            <stop stop-color="#9F1C20" offset="0%"></stop>
+            <stop stop-color="#ED2224" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Desktop---curve" transform="translate(-654.000000, -4056.000000)">
+            <g id="scala" transform="translate(654.000000, 4056.000000)">
+                <g id="D-link" transform="translate(1.000000, 0.000000)">
+                    <g id="D">
+                        <g id="Group">
+                            <g transform="translate(0.000000, 5.392835)" fill="url(#linearGradient-2)" fill-rule="nonzero">
+                                <path d="M0,8.39520302 C0,8.39520302 20.5182476,10.4631552 20.5182476,13.9114318 L20.5182476,5.63877813 C20.5182476,5.63877813 20.5182476,2.19219107 0,0.12254934 L0,8.39520302 Z" id="C"></path>
+                                <g id="C-link" transform="translate(0.000000, 11.030768)">
+                                    <path d="M0,8.39520302 C0,8.39520302 20.5182476,10.4631552 20.5182476,13.9114318 L20.5182476,5.63877813 C20.5182476,5.63877813 20.5182476,2.19219107 0,0.12254934 L0,8.39520302 Z" id="C"></path>
+                                </g>
+                            </g>
+                            <g fill="url(#linearGradient-5)" id="Path">
+                                <path d="M20.5182476,0 L20.5182476,8.27265368 C20.5182476,8.27265368 20.5182476,11.7192407 0,13.7888825 L0,5.51622879 C0,5.51622879 20.5182476,3.44658705 20.5182476,0"></path>
+                                <path d="M0,16.5453074 C0,16.5453074 20.5182476,14.4773551 20.5182476,11.0290786 L20.5182476,19.3017322 C20.5182476,19.3017322 20.5182476,22.7483193 0,24.817961 L0,16.5453074 Z"></path>
+                                <path d="M0,35.8478843 L0,27.5752307 C0,27.5752307 20.5182476,25.5072784 20.5182476,22.0590019 L20.5182476,30.3316556 C20.5182476,30.3316556 20.5182476,33.7782426 0,35.8478843"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="D">
+                    <g id="Group">
+                        <g transform="translate(0.000000, 5.392835)" fill="url(#linearGradient-2)" fill-rule="nonzero">
+                            <path d="M0,8.39520302 C0,8.39520302 20.5182476,10.4631552 20.5182476,13.9114318 L20.5182476,5.63877813 C20.5182476,5.63877813 20.5182476,2.19219107 0,0.12254934 L0,8.39520302 Z" id="C"></path>
+                            <g id="C-link" transform="translate(0.000000, 11.030768)">
+                                <path d="M0,8.39520302 C0,8.39520302 20.5182476,10.4631552 20.5182476,13.9114318 L20.5182476,5.63877813 C20.5182476,5.63877813 20.5182476,2.19219107 0,0.12254934 L0,8.39520302 Z" id="C"></path>
+                            </g>
+                        </g>
+                        <g fill="url(#linearGradient-5)" id="Path">
+                            <path d="M20.5182476,0 L20.5182476,8.27265368 C20.5182476,8.27265368 20.5182476,11.7192407 0,13.7888825 L0,5.51622879 C0,5.51622879 20.5182476,3.44658705 20.5182476,0"></path>
+                            <path d="M0,16.5453074 C0,16.5453074 20.5182476,14.4773551 20.5182476,11.0290786 L20.5182476,19.3017322 C20.5182476,19.3017322 20.5182476,22.7483193 0,24.817961 L0,16.5453074 Z"></path>
+                            <path d="M0,35.8478843 L0,27.5752307 C0,27.5752307 20.5182476,25.5072784 20.5182476,22.0590019 L20.5182476,30.3316556 C20.5182476,30.3316556 20.5182476,33.7782426 0,35.8478843"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

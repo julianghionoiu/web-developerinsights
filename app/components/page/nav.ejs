@@ -1,0 +1,53 @@
+<%# EJS Vars:
+ - locals.desktop_page_index = number [optional]
+ - locals.mobile_page_index = number [optional]
+%>
+<nav class="nav">
+    <div class="container">
+        <div class="nav-flex">
+
+            <!-- Logo -->
+            <a href="/" class="logo">
+                <img src="assets/img/site/DI_logo.png" alt="">
+            </a>
+
+            <!-- Menu -->
+            <div class="menu-wrap">
+                <ul class="menu">
+                    <li class="toplevel <% if(locals.desktop_page_index == 0){ %>  <%- 'current' %>  <% } %>"><a href="/case-studies.html">Case Studies</a></li>
+                    <li class="toplevel <% if(locals.desktop_page_index == 1){ %>  <%- 'current' %>  <% } %>"><a href="/pricing.html">Pricing</a></li>
+                </ul>
+                <a id="btn_nav_card_calendly" href="" class="btn-call-to-action"
+                   onclick="<%- include('../../components/content/calendly_onclick.ejs') %>">
+                    Let's Talk
+                </a>
+            </div>
+
+            <!-- Nav Toggle -->
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+<!-- Mobile Navigation -->
+<div class="mobile-nav">
+    <div class="container">
+        <ul class="menu">
+            <li class="<% if(locals.mobile_page_index == 1){ %>  <%- 'current' %>  <% } %>"><a href="/case-studies.html">Case studies</a></li>
+            <li class="<% if(locals.mobile_page_index == 2){ %>  <%- 'current' %>  <% } %>"><a href="/pricing.html">Pricing</a></li>
+        </ul>
+        <a id="btn_nav_card_calendly" href="" class="btn-call-to-action"
+           onclick="<%- include('../../components/content/calendly_onclick.ejs') %>">
+            Let's Talk
+        </a>
+    </div>
+</div>
+
+
+
+

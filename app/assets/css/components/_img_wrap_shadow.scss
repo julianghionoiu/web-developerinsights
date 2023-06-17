@@ -1,0 +1,9 @@
+.img-wrap-with-shadow {
+  display: inline-block;
+  box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.14);
+
+  img {
+    display: block;
+    object-fit: contain;
+  }
+}

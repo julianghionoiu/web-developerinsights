@@ -1,0 +1,234 @@
+.process-graph {
+  margin: 40px 0;
+  box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.14);
+  padding: 10px;
+
+  h6 {
+    text-align: right;
+    font-style: italic;
+  }
+
+  .graph-wrap {
+    display: flex;
+    margin-left: -4px;
+    margin-right: -4px;
+    padding: 60px 10px 100px;
+  }
+
+  .part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 4px;
+
+    // Caption
+    .caption {
+      color: $color-dark;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1.4;
+      font-family: $font-nunito;
+      bottom: 0;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      transform: translateY(calc(100% + 30px));
+      min-width: 200px;
+      max-width: 300px;
+      width: auto;
+      left: 0;
+      white-space: pre-line;
+    }
+
+    // Triangle
+    .triangle {
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 20px 15px 0 15px;
+      border-color: transparent transparent transparent transparent;
+      position: absolute;
+      bottom: 0;
+      transform: translateY(100%);
+    }
+
+    // Graph
+    .graph-part {
+      width: 100%;
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 15px;
+
+      .label {
+        text-align: center;
+        font-family: $font-avenir;
+        color: $color-dark;
+        font-weight: 900;
+        font-size: 15px;
+        max-width: 90%;
+        line-height: 1.4;
+      }
+    }
+
+    &.top {
+      flex-direction: column-reverse;
+
+      .triangle {
+        top: 0;
+        bottom: auto;
+        transform: translateY(-100%) rotate(180deg);
+      }
+
+      .caption {
+        left: auto;
+        right: auto;
+        bottom: auto;
+        top: 0;
+        transform: translateY(calc(-100% - 30px));
+      }
+    }
+
+
+    // Colors
+    &.red {
+      .graph-part {
+        border: 1px solid #E4787C;
+        background-color: #F4CCCC;
+      }
+
+      .triangle {
+        border-color: #FF0000 transparent transparent transparent;
+      }
+    }
+
+    &.orange {
+      .graph-part {
+        background-color: #FDE5CE;
+        border: 1px solid #EBA660;
+      }
+
+      .triangle {
+        border-color: #FF9A00 transparent transparent transparent;
+      }
+    }
+
+    &.blue {
+      .graph-part {
+        background-color: #C9DAF8;
+        border: 1px solid #3D79D8;
+      }
+
+      .triangle {
+        border-color: #6D9EEC transparent transparent transparent;
+      }
+    }
+
+    &.green {
+      .graph-part {
+        background-color: #DAEAD3;
+        border: 1px solid #5D904A;
+      }
+
+      .triangle {
+        border-color: #5D904A transparent transparent transparent;
+      }
+
+    }
+
+    &.logo{
+      .triangle{
+        border: 0;
+        background-image: url(../img/components/process-graph/logo-triangle.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 22px;
+        width: 22px;
+      }
+      &.top{
+        .triangle{
+          transform: translateY(-100%);
+        }
+      }
+    }
+  }
+
+  .part-1 {
+    width: calc(22% - 8px);
+
+    .graph-part {
+      border-radius: 35px 0 0 35px;
+    }
+  }
+
+  .part-2 {
+    width: calc(38% - 8px);
+  }
+
+  .part-3 {
+    width: calc(18% - 8px);
+  }
+
+  .part-4 {
+    width: calc(22% - 8px);
+
+    .graph-part {
+      border-radius: 0 35px 35px 0;
+    }
+  }
+
+
+  @media (max-width: 991px) {
+    .graph-wrap {
+      padding: 20px 0;
+      flex-direction: column;
+      margin: 0;
+
+      .part {
+        margin-bottom: 35px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        width: 100% !important;
+        margin-left: 0;
+        margin-right: 0;
+        flex-direction: column !important;
+
+        .graph-part {
+          border-radius: 0;
+          height: 60px;
+
+          .label {
+            font-size: 16px;
+          }
+        }
+
+        .triangle {
+          transform: none;
+          position: static;
+        }
+        &.logo{
+          .triangle{
+            transform: rotate(180deg);
+          }
+        }
+
+        .caption {
+          margin-top: 5px;
+          position: static;
+          transform: none;
+          text-align: center;
+        }
+
+      }
+    }
+  }
+
+}

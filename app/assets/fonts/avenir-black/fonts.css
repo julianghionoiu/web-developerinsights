@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Avenir Black Oblique';
+    src: url('Avenir-BlackOblique.eot');
+    src: local('Avenir Black Oblique'), local('Avenir-BlackOblique'),
+        url('Avenir-BlackOblique.eot?#iefix') format('embedded-opentype'),
+        url('Avenir-BlackOblique.woff2') format('woff2'),
+        url('Avenir-BlackOblique.woff') format('woff'),
+        url('Avenir-BlackOblique.ttf') format('truetype'),
+        url('Avenir-BlackOblique.svg#Avenir-BlackOblique') format('svg');
+    font-weight: 900;
+    font-style: italic;
+}
+

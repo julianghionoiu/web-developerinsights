@@ -1,0 +1,126 @@
+.lang-icons-grid {
+  margin-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  // 1/3 Column
+  .lang-logo-col {
+    width: calc(100% / 3);
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      height: 65px;
+      width: 1px;
+      display: block;
+      background-color: #979797;
+      top: 45px;
+    }
+
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+
+    // Column Title
+    .part-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 16px;
+      color: $color-text;
+      font-family: $font-avenir;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    // Logos Wrapper
+    .lang-logo-col-flex {
+      display: flex;
+      justify-content: space-between;
+
+
+      // Lang Item
+      .lang-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .img-wrap {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 60px;
+          width: 60px;
+
+          img {
+            max-width: 100%;
+            object-fit: contain;
+          }
+        }
+
+        .lang-title {
+          margin-top: 12px;
+          text-align: center;
+          font-size: 12px;
+          color: $color-text;
+          font-weight: bold;
+          font-family: $font-avenir;
+        }
+      }
+
+    }
+
+    &:nth-child(1) {
+      padding-right: 40px;
+    }
+
+    &:nth-child(2) {
+      padding: 0 40px;
+
+      .lang-logo-col-flex {
+        justify-content: space-around;
+      }
+    }
+
+    &:nth-child(3) {
+      padding-left: 40px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    justify-content: center;
+    .lang-logo-col {
+      padding: 0 40px !important;
+      width: calc(100% / 2);
+      margin-bottom: 50px;
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 565px) {
+    justify-content: center;
+    .lang-logo-col {
+      width: 100%;
+      margin-bottom: 45px;
+
+      .lang-logo-col-flex {
+        justify-content: center !important;
+
+        .lang-item {
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+
+
+}

@@ -1,0 +1,24 @@
+<section class="section-book-call">
+    <div class="container">
+
+        <div class="content">
+            <h3 class="heading">Want to know more?</h3>
+            <p>Let’s talk!</p>
+            <div class="btn-wrap">
+                <a id="btn_card_calendly" href="" class="btn btn-dark"
+                   onclick="<%- include('../../components/content/calendly_onclick.ejs') %>">
+                    Let's Talk
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- LinkedIn tracking event -->
+<script>
+    var btn = document.getElementById("btn_card_calendly")
+    if (btn && btn.addEventListener) {
+        btn.addEventListener("click",function() {
+            window.lintrk('track', { conversion_id: 5481674 });
+        });
+    }
+</script>

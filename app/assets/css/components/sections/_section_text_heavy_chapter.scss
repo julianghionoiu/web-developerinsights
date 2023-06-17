@@ -1,0 +1,19 @@
+section.section-text-heavy-chapter {
+  @include site-spacing-margin-bottom;
+
+  .summary {
+    margin-bottom: 60px;
+  }
+
+  .summary,
+  .contents {
+    padding-left: 60px;
+
+    @media (max-width: 767px) {
+      padding-left: 20px;
+    }
+    @media (max-width: 565px) {
+      padding-left: 0;
+    }
+  }
+}

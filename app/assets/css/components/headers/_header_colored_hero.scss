@@ -1,0 +1,60 @@
+.header-colored-hero {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  position: relative;
+  @include site-spacing-margin-bottom;
+
+  .background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+    z-index: 1;
+  }
+
+  .overlay {
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    opacity: 0.75;
+
+    &.red {
+      background-color: $color-red;
+    }
+
+    &.blue {
+      background-color: $color-blue;
+    }
+
+    &.pink {
+      background-color: $color-pink;
+    }
+
+    &.dark {
+      background-color: $color-dark;
+    }
+  }
+
+  .container {
+    position: relative;
+    z-index: 10;
+  }
+
+  h1, h2, h3, h4, h5, h6, p {
+    color: $color-white;
+  }
+
+  strong {
+    letter-spacing: 0.05em;
+  }
+}

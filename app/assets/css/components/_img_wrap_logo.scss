@@ -1,0 +1,12 @@
+.image-wrap-logo {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+
+  img {
+    display: block;
+    object-fit: contain;
+    max-width: 200px;
+  }
+}

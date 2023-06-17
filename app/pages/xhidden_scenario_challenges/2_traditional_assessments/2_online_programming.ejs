@@ -1,0 +1,33 @@
+<section class="section-indented-text">
+    <div class="container">
+        <a class="anchor" id="online-programming"></a>
+        <h4>Online programming puzzle</h4>
+
+        <b>What is it:</b>
+        <p>
+            You send the candidate a link to a remote system where they are asked to implement the solution to a
+            simple problem (usually algorithmic). It is predominately used for screening.
+        </p>
+
+        <b>Positives:</b>
+        <ul>
+            <li>you get to see a code sample</li>
+            <li>the system automatically validates their submission, is objective</li>
+        </ul>
+
+        <b>Negatives:</b>
+        <ul>
+            <li>very limited insights. You are unable to prioritise the “best” candidates on this data</li>
+            <li>some Developers will not perform at their best using an online environment</li>
+        </ul>
+
+        <%- include('../../../components/content/ratings_table.ejs', {
+        ratings: {
+        development_technique: "UNKNOWN",
+        delivery_pace: "LOW",
+        code_quality: "LOW",
+        testing_strategies: "UNKNOWN",
+        key_technologies: "LOW",
+        }}) %>
+    </div>
+</section>

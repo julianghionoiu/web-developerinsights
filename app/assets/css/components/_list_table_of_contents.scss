@@ -1,0 +1,55 @@
+ul.list-table-of-contents {
+  padding-left: 0.4em;
+  text-align: left;
+
+  li.level1 {
+    list-style: none;
+    margin-left: 1.5em;
+    padding-left: 0.3em;
+    position: relative;
+    font-size: 16px;
+    color: $color-grey;
+
+    @media (max-width: 660px) {
+      font-size: 18px;
+    }
+  }
+
+  li.level1:before {
+    content: " ";
+    background-size: cover;
+    background-image: url("../img/components/list/right_sign_blue.svg");
+    position: absolute;
+    width: 1.2em;
+    height: 1.2em;
+    top: 0.1em;
+    left: -1.6em;
+  }
+
+  li.level2 {
+    list-style: outside;
+    margin-left: 3rem;
+    padding-left: 0.3em;
+    position: relative;
+    font-size: 14px;
+    color: $color-blue;
+
+    @media (max-width: 660px) {
+      font-size: 16px;
+    }
+  }
+
+
+  a {
+    display: inline-block;
+    position: relative;
+    @include transition;
+    color: $color-dark;
+
+
+    &:hover {
+      color: $color-blue;
+      text-decoration: underline;
+    }
+  }
+}

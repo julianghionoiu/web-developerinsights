@@ -1,0 +1,40 @@
+<section class="section-indented-text">
+    <div class="container">
+        <a class="anchor" id="take-home"></a>
+        <h4>Traditional take-home exercise</h4>
+
+        <b>What is it:</b>
+        <p>
+            You send a list of requirements to the candidate (usually as a PDF) and ask them to write the best
+            software that they can produce that meets those requirements.
+        </p>
+        <p>
+            The candidate will then attempt to model the requirements and then send back their source code for
+            review.
+        </p>
+
+        <b>Positives:</b>
+        <ul>
+            <li>it is an actual proof of work</li>
+        </ul>
+
+        <b>Negatives:</b>
+        <ul>
+            <li>as the candidate’s codes “offline”, you have no idea how long it took them to complete. It could
+                be 1hr or 100 hrs! This makes it impossible to make confident decisions or be able to compare
+                their solutions versus other candidates
+            </li>
+            <li>takes one of your internal developers at least 30 minutes to review the submission</li>
+            <li>the evaluation is subjective and it’s hard to achieve consistency across your team</li>
+        </ul>
+
+        <%- include('../../../components/content/ratings_table.ejs', {
+        ratings: {
+        development_technique: "UNKNOWN",
+        delivery_pace: "UNKNOWN",
+        code_quality: "HIGH",
+        testing_strategies: "MEDIUM",
+        key_technologies: "MEDIUM",
+        }}) %>
+    </div>
+</section>

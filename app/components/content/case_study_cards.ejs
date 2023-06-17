@@ -1,0 +1,71 @@
+<%# EJS Vars:
+ - locals.title = string [optional]
+ - locals.subtitle = string [optional]
+%>
+<section class="section-case-study-cards">
+    <div class="container">
+        <div class="row justify-center">
+            <div class="col-xl-10 center">
+                <% if (locals.title) { %>
+                    <h4 class="title"><%= locals.title %></h4>
+                <% } %>
+                <% if (locals.subtitle) { %>
+                    <p class="section-sub-content"><%= locals.subtitle %></p>
+                <% } %>
+            </div>
+        </div>
+        <div class="row justify-center">
+            <div class="col-lg-6 m-5 case-study-card">
+                <!-- Background -->
+                <img src="assets/img/site/bg_tile.jpg" alt="" class="background">
+
+                <!-- Overlay -->
+                <div class="overlay red"></div>
+
+                <!-- Inner Content -->
+                <div class="case-study-inner">
+
+                    <!-- Content -->
+                    <div class="case-study-content">
+                        <div class="review">
+                            <p>
+                                "The Developer Insights challenge mimics what developers do as part of the job.”
+                            </p>
+                        </div>
+                        <div class="author">
+                            Kevin Harkin, Managing Principal, Valtech
+                        </div>
+                    </div>
+                    <a href="/case-study-valtech.html" class="cta-btn btn btn-white-empty large">Read Valtech case study</a>
+                </div>
+            </div>
+            <div class="col-lg-6 m-5 case-study-card">
+
+                <!-- Background -->
+                <img src="assets/img/site/bg_tile.jpg" alt="" class="background">
+
+                <!-- Overlay -->
+                <div class="overlay dark">
+
+                </div>
+
+                <!-- Inner Content -->
+                <div class="case-study-inner">
+
+                    <!-- Content -->
+                    <div class="case-study-content">
+                        <div class="review">
+                            <p> “Developer Insights identifies those special candidates that you can trust to deliver.”
+                            </p>
+                        </div>
+                        <div class="author">
+                            Will Hayes, Engineering Manager, iwoca
+                        </div>
+                    </div>
+
+                    <a href="/case-study-iwoca.html" class="cta-btn btn btn-white-empty large">Read iwoca case study</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

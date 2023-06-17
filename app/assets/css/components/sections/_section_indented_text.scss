@@ -1,0 +1,15 @@
+section.section-indented-text {
+  @include site-spacing-margin-bottom;
+
+  .container {
+    padding-left: 80px;
+
+    @media (max-width: 600px) {
+      padding-left: 40px;
+    }
+
+    @media (max-width: 400px) {
+      padding-left: 20px;
+    }
+  }
+}

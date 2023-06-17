@@ -1,0 +1,21 @@
+.julian-and-nick-img {
+  max-width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  img {
+    box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.14);
+    display: block;
+    object-fit: contain;
+  }
+
+  @media (max-width: 991px) {
+    max-width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+}

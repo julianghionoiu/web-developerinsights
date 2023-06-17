@@ -1,0 +1,126 @@
+form {
+  box-shadow: 0 2px 24px 0 rgba(0, 0, 0, .14);
+  padding: 36px 32px;
+  background-color: $color-white;
+
+  a {
+    position: relative;
+    text-decoration: underline;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+
+    .label {
+      color: $color-dark;
+      font-family: $font-avenir;
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    .input {
+      margin-top: 4px;
+      display: block;
+      border: 1px solid #777777;
+      height: 40px;
+      width: 100%;
+      background-color: $color-white;
+      padding-left: 12px;
+      padding-right: 24px;
+      font-size: 16px;
+      color: $color-dark;
+      font-family: $font-avenir;
+      font-weight: 500;
+    }
+
+    .select-wrap {
+      margin-top: 4px;
+      position: relative;
+      display: block;
+      width: 100%;
+
+      &:after {
+        content: "";
+        position: absolute;
+        right: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 8px 7px 0 7px;
+        border-color: #666666 transparent transparent transparent;
+      }
+
+      .select {
+        border: 1px solid #777777;
+        height: 40px;
+        width: 100%;
+        background-color: $color-white;
+        padding-left: 12px;
+        padding-right: 12px;
+        font-size: 16px;
+        color: $color-dark;
+        font-family: $font-avenir;
+        font-weight: 500;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+
+        &::-ms-expand {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .submit-group {
+    button {
+      width: 100%;
+      display: block;
+      cursor: pointer;
+    }
+  }
+
+  .form-copyright {
+    font-size: 14px;
+    font-family: $font-avenir;
+    font-weight: 400;
+
+    a {
+      display: inline-block;
+      position: relative;
+      @include transition;
+
+      &:after {
+        display: block;
+        content: "";
+        width: 100%;
+        bottom: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background-color: $color-dark;
+        @include transition;
+      }
+
+      &:hover {
+        color: $color-red;
+
+        &:after {
+          background-color: $color-red;
+        }
+      }
+    }
+  }
+
+
+  @media (max-width: 375px) {
+    padding: 35px 20px;
+  }
+  @media (max-width: 345px) {
+    padding: 35px 15px;
+  }
+}

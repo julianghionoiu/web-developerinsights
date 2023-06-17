@@ -1,0 +1,25 @@
+<%# EJS Vars:
+ - locals.package_name = string
+ - locals.currency_code = string
+ - locals.price_row1 = string
+ - locals.price_row2 = string
+ - locals.footnote = string
+ - locals.href = string
+ - locals.cta = string
+ - locals.is_visible = boolean
+%>
+<div class="pricing <%= locals.currency_code %>_pricing <% if (!locals.is_visible) { %>collapse<% } %>">
+    <p class="package-name"><%= locals.package_name %></p>
+    <p class="price"><%= locals.price_row1 %><br/><%= locals.price_row2 %></p>
+    <p class="footnote"><%= locals.footnote %></p>
+    <a id="btn_buy_now_<%= locals.package_name %>_<%= locals.currency_code %>" href="<%= locals.href %>" class="cta-btn btn btn-white-empty large"><%= locals.cta %></a>
+</div>
+<!-- LinkedIn tracking event -->
+<script>
+    var btn = document.getElementById("btn_buy_now_<%= locals.package_name %>_<%= locals.currency_code %>")
+    if (btn && btn.addEventListener) {
+        btn.addEventListener("click",function() {
+            window.lintrk('track', { conversion_id: 5481682 });
+        });
+    }
+</script>

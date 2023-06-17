@@ -1,0 +1,25 @@
+section.section-shield-with-shadow {
+  @include site-spacing-margin-bottom;
+
+  .container {
+    box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.14);
+    padding: 30px 80px;
+
+    .section-sub-content {
+      margin-top: 12px;
+      max-width: 560px;
+    }
+
+    @media (max-width: 991px) {
+      padding: 40px 20px;
+    }
+    @media (max-width: 660px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      align-items: flex-start;
+      text-align: left;
+      max-width: calc(100% - 30px);
+    }
+  }
+}

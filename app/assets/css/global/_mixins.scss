@@ -1,0 +1,11 @@
+@mixin transition {
+  transition: 0.3s all ease;
+}
+
+@mixin site-spacing-margin-bottom {
+  margin-bottom: 60px;
+
+  @media (max-width: 991px) {
+    margin-bottom: 60px;
+  }
+}

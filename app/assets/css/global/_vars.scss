@@ -1,0 +1,49 @@
+$color-white: #fff;
+$color-red: #C63C00;
+$color-blue: #00aaff;
+$color-dark-blue: #103658;
+$color-dark: #1A1A1A;
+$color-grey: #555555;
+$color-pink: #9B4594;
+
+$color-text: #333333;
+
+$font-avenir: 'Avenir', sans-serif;
+$font-nunito: 'Nunito', sans-serif;
+$font-avenir-black-obl: 'Avenir Black Oblique';
+$font-avenor-medium-obl: 'Avenir Medium';
+
+.blue-bg {
+  background-color: $color-blue;
+}
+
+.pink-bg {
+  background-color: $color-pink;
+}
+
+.red-bg {
+  background-color: $color-red;
+}
+
+.blue {
+  color: $color-blue;
+}
+
+.grey {
+  color: $color-grey;
+}
+
+.pink {
+  color: $color-pink;
+}
+
+.red {
+  color: $color-red;
+}
+
+.white {
+  color: $color-white;
+}
+
+
+

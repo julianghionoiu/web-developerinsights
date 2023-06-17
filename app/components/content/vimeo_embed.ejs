@@ -1,0 +1,21 @@
+<%# EJS Vars:
+ - locals.vimeo_id = string
+ - locals.vimeo_security_code = string
+ - locals.component_unique_name = string
+%>
+<div style="padding:56.25% 0 0 0;position:relative;">
+    <iframe src="https://player.vimeo.com/video/<%= locals.vimeo_id %>?h=<%= locals.vimeo_security_code %>&amp;color=C63C00&amp;title=false&amp;byline=false&amp;portrait=false&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"
+            id="<%= locals.component_unique_name %>">
+    </iframe>
+</div>
+<script src="https://player.vimeo.com/api/player.js"></script>
+<script>
+    var iframe = document.getElementById("<%= locals.component_unique_name %>");
+    var player = new Vimeo.Player(iframe);
+
+    player.on('play', function() {
+        console.log('Played the video');
+    });
+</script>

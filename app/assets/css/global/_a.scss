@@ -1,0 +1,30 @@
+
+a {
+  background-color: transparent;
+  text-decoration: unset;
+  color: unset;
+
+  &:active, &:focus, &:hover, &:visited {
+    color: unset;
+    text-decoration: unset;
+  }
+}
+
+a.person-name {
+  color: $color-red;
+  text-decoration: none !important;
+}
+
+a.developer-insights {
+  color: $color-red;
+  text-decoration: none !important;
+
+  &:visited {
+    color: $color-red;
+  }
+}
+
+a.underline {
+  position: relative;
+  text-decoration: underline;
+}

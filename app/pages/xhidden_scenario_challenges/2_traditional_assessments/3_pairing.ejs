@@ -1,0 +1,34 @@
+<section class="section-indented-text">
+    <div class="container">
+        <a class="anchor" id="pairing"></a>
+        <h4>Hands-on pairing session</h4>
+
+        <b>What is it:</b>
+        <p>
+            You meet with a candidate (either F2F or online) and you work together on a piece of code.
+        </p>
+
+        <b>Positives:</b>
+        <ul>
+            <li>enables you to interact socially with the candidate</li>
+        </ul>
+
+        <b>Negatives:</b>
+        <ul>
+            <li>due to the time constraints, not much code is being written, so you cannot gauge the quality of
+                their code or development speed
+            </li>
+            <li>the validation is highly subjective and biased towards people who can interact well socially
+            </li>
+        </ul>
+
+        <%- include('../../../components/content/ratings_table.ejs', {
+        ratings: {
+        development_technique: "MEDIUM",
+        delivery_pace: "LOW",
+        code_quality: "LOW",
+        testing_strategies: "MEDIUM",
+        key_technologies: "LOW",
+        }}) %>
+    </div>
+</section>

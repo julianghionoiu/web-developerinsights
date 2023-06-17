@@ -1,0 +1,60 @@
+<p>Price displayed in </p>
+<select name="currency" id="currency_selector" selected="USD">
+    <option value="USD">USD</option>
+    <option value="GBP">GBP</option>
+    <option value="EUR">EUR</option>
+</select>
+<script>
+    setCardsDisplay = function (className, display) {
+        let allMatchingCards = document.getElementsByClassName(className)
+        for(let i=0; i<allMatchingCards.length; i++){
+            allMatchingCards[i].style.display = display;
+        }
+    }
+
+    displayPrice = function(currency) {
+        console.log("Attempting to show price in "+currency)
+        // First, lets hide all the current pricing
+        setCardsDisplay("pricing", "none")
+
+        // Is the currency within the valid range of currencies that we wish to show?
+        if (currency !== null || (["USD", "GBP", "EUR"].indexOf(currency) > -1)) {
+            // If yes, then show the currency
+            console.log("Showing price in "+currency)
+            setCardsDisplay(currency + "_pricing", "block")
+        } else {
+            // If no, then just show USD pricing
+            console.log("Price not known ("+currency+"), showing USD default")
+            setCardsDisplay("USD_pricing", "block")
+        }
+    }
+
+    // Configure the dropdown action
+    let currencySelector = document.getElementById("currency_selector");
+    currencySelector.addEventListener("change", function () {
+        console.log("Selected currency is: "+currencySelector.value)
+        displayPrice(currencySelector.value)
+    });
+
+    // Fire off external API event
+    let request = new XMLHttpRequest();
+    request.open('GET', 'https://api.ipdata.co/?api-key=0e43a7a55a750738503fa43bf57f1cb2ba4879878bc2b7cde9f975e0');
+    request.setRequestHeader('Accept', 'application/json');
+    request.onreadystatechange = function () {
+        console.log("Received response from ipdata.co")
+        if (this.readyState === 4) {
+            let responseJson = JSON.parse(this.responseText);
+            if ("currency" in responseJson) {
+                let currencyJson = responseJson["currency"];
+                if ("code" in currencyJson) {
+                    currencySelector.value = currencyJson["code"]
+                    displayPrice(currencySelector.value)
+                }
+            }
+        }
+    };
+    request.onerror = function () {
+        console.log("Failed making request to ipdata.co")
+    }
+    request.send();
+</script>

@@ -1,0 +1,32 @@
+section.section-trial {
+  @include site-spacing-margin-bottom;
+
+  .content {
+    box-shadow: 0 2px 24px 0 rgba(0, 0, 0, 0.14);
+    padding: 35px;
+
+    .heading {
+      color: $color-red;
+      display: block;
+      margin-bottom: 12px;
+    }
+
+    .sub-heading {
+      color: $color-dark;
+      font-family: $font-avenir;
+      font-weight: 500;
+      letter-spacing: 0.09px;
+      line-height: 1.35;
+    }
+
+    ul {
+      li {
+        font-size: 18px;
+      }
+    }
+
+    .btn-wrap {
+      margin-top: 25px;
+    }
+  }
+}
