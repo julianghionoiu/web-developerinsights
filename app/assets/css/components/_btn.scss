@@ -89,6 +89,37 @@
     }
   }
 
+  &.btn-blue {
+    background-color: $color-blue;
+    box-sizing: border-box;
+    line-height: 42px;
+    width: auto;
+    border: 2px solid $color-white;
+    border-radius: 6px;
+    color: $color-white;
+    letter-spacing: 1px;
+
+    &:hover, &:active, &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  &.btn-blue-empty {
+    box-sizing: border-box;
+    line-height: 42px;
+    width: auto;
+    border-radius: 6px;
+    letter-spacing: 1px;
+    background-color: transparent;
+    color: $color-red;
+    border: 2px solid $color-blue;
+
+    &:hover, &:active, &:focus {
+      background-color: $color-blue;
+      color: $color-white;
+    }
+  }
+
   &.large {
     max-width: 100%;
     min-width: 256px;
