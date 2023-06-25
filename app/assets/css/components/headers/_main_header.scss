@@ -20,7 +20,8 @@
 
   // Partners
   .partners {
-    margin-top: 40px;
+    margin-top: 170px;
+    align-items: center;
 
     &__caption {
       letter-spacing: 1px;
@@ -35,7 +36,7 @@
       .partner {
         display: flex;
         align-items: center;
-        margin-right: 25px;
+        margin-right: 6%;
         height: 50px;
 
         img {
