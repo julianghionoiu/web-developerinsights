@@ -1,1 +1,8 @@
-Calendly.initPopupWidget({url: 'https://calendly.com/developer-insights/call'});return false;
+<%# EJS Vars:
+ - locals.meet_with_person = [Nick|Pete]
+%>
+<% if(locals.meet_with_person === "Pete"){ %>
+    Calendly.initPopupWidget({url: 'http://calendly.com/peter-kindness/di-set-up'});return false;
+<% } else{ %>
+    Calendly.initPopupWidget({url: 'https://calendly.com/nick-zak-developer-insights/30-minute-chat'});return false;
+<% } %>

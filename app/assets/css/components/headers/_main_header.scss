@@ -16,6 +16,10 @@
     .header-title {
       letter-spacing: 0.75px;
     }
+
+    h2 {
+      margin-bottom: 70px;
+    }
   }
 
   // Partners
@@ -36,7 +40,7 @@
       .partner {
         display: flex;
         align-items: center;
-        margin-right: 6%;
+        margin-right: 3%;
         height: 50px;
 
         img {
@@ -45,38 +49,45 @@
           height: 100%;
         }
 
-        // masabi
+        // alphasights
         &:nth-child(1) {
-          img {
-            max-height: 44.5px;
-          }
-        }
-
-        // valtech
-        &:nth-child(2) {
-          img {
-            max-height: 26px;
-          }
-        }
-
-        // ofgem
-        &:nth-child(3) {
           img {
             max-height: 40px;
           }
         }
 
-        // think-money
+        // masabi
+        &:nth-child(2) {
+          img {
+            max-height: 40px;
+          }
+        }
+
+        // valtech
+        &:nth-child(3) {
+          img {
+            max-height: 24px;
+          }
+        }
+
+        // ofgem
         &:nth-child(4) {
           img {
-            max-height: 35px;
+            max-height: 30px;
+          }
+        }
+
+        // think-money
+        &:nth-child(5) {
+          img {
+            max-height: 30px;
           }
         }
 
         // iwoca
-        &:nth-child(5) {
+        &:nth-child(6) {
           img {
-            max-height: 46px;
+            max-height: 35px;
           }
         }
 
@@ -118,36 +129,43 @@
         margin-bottom: 15px;
         height: 35px;
 
-        // masabi
+        // alphasights
         &:nth-child(1) {
           img {
             max-height: 32.5px;
           }
         }
 
-        // valtech
+        // masabi
         &:nth-child(2) {
+          img {
+            max-height: 32.5px;
+          }
+        }
+
+        // valtech
+        &:nth-child(3) {
           img {
             max-height: 14px;
           }
         }
 
         // ofgem
-        &:nth-child(3) {
+        &:nth-child(4) {
           img {
             max-height: 28px;
           }
         }
 
         // think-money
-        &:nth-child(4) {
+        &:nth-child(5) {
           img {
             max-height: 23px;
           }
         }
 
         // iwoca
-        &:nth-child(5) {
+        &:nth-child(6) {
           img {
             max-height: 34px;
           }
