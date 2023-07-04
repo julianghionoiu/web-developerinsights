@@ -2,7 +2,7 @@
  - locals.meet_with_person = [Nick|Pete]
 %>
 <% if(locals.meet_with_person === "Pete"){ %>
-    Calendly.initPopupWidget({url: 'https://calendly.com/peter-kindness/di-set-up'});return false;
+    Calendly.initPopupWidget({url: 'https://calendly.com/peter-kindness/30min'});return false;
 <% } else{ %>
     Calendly.initPopupWidget({url: 'https://calendly.com/nick-zak-developer-insights/30-minute-chat'});return false;
 <% } %>
